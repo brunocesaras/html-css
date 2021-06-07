@@ -1,0 +1,251 @@
+tags de conteudo abrem e fecham.
+ex.:
+<a></a>
+<body></body>
+tags de informação não precisam fechar
+ex.:
+<meta charset="utf-8">
+
+O Head é usado para transmitir informações ao navegador.
+
+o body é onde fica o conteúdo do nosso HTML.
+
+
+
+CSS
+
+Tudo o que é aplicado ao elemento pai reflete nos elementos filho.
+
+CSS inline: Na linha onde temos a nossa tag, adicionamos a propriedade do CSS
+
+A tag <style>: Dentro da tag, podemos colocar marcações de CSS referentes aos elementos que temos no nosso HTML
+
+para definir uma regra específica para aplicar em tags que estão dentro de outras tags aplica-se as tags em sequência.
+Ex.:
+em strong{
+	color: red;
+}
+aplica em todas as tags strong que estão dentro de em a cor de texto vermelho.
+
+
+quando usados 2 seletores:
+
+identificador: 100
+classe: 10
+tag:1
+
+quando utilizamos
+
+p{}: a força é 1
+form p{}: a força é 2.
+
+.teste{}: a força é 10
+
+p teste: a força é 11
+
+#teste: a força é 100;
+
+a força é utilizada para saber qual estilo está sendo aplicado na app.
+
+
+
+Cores
+
+RGB (Red Green Blue)
+
+# _ _ _ _ _ _
+
+
+Hexadecimal
+
+0: ausência
+F: máximo
+
+#000000: preto
+
+#FFFFFF: branco
+
+#FF0000: vermelho
+
+RGB: 0,1,2,3...255
+
+0: ausência
+255: máximo
+
+rgb(255, 255, 255): branco
+rgb(0, 0, 255): azul
+
+
+tags de chamada de arquivos externos, não abrimos e fechamos.
+
+tag IMG é utilizada para inserir uma imagem no HTML
+
+na imagem é boa prática inserir a propriedade alt. Contendo uma descrição da imagem para melhorar a acessibilidade da página.
+
+propriedades:
+
+height: ajusta a altura do elemento.
+width: ajusta a largura do elemento.
+padding: ajusta o espaçamento interno do elemento.
+margin: espaçamento externo do elemento.
+position:
+	-static: o elemento fica estático em relação ao seuu ponto inicial
+	-relative: o elemento fica em posição relativa ao ponto inicial dele.
+	-absolute: o elemento desloca o ponto inicial dele para um local definido pelo programador.
+
+para alinhaar uma div ao centro usar o calculo de margin automatico.
+
+css
+
+Por coerencia, manter a ordem dos estilos na ordem que aparecem no HTML (boa prática)
+A ordem de importação das folhas de estilo css importa. Se um css aplica uma regra em um elemento e outro css aplicar outra regra, a regra declarada posterior sobrepora a regra declarada anteriormente.
+
+HTML
+
+a tag <!DOCTYPE html> quando não informado a versão do html utilizado, é interpretado como a última versão do html.
+
+a estrutura básica de uma página html é:
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> </title>
+		<link rel="stylesheet" href="nome_css">
+	</head>
+	<body>
+		<header></header>
+	</body>
+</html>
+
+*Atríbuto rel: relationship between the current document and the linked doc/resource.
+
+head são informações passadas pro navegador.
+body são informações que são exibidas na pagina.
+
+DISPLAY tem 2 formas de exibir conteúdo:
+inline e block. Alem de inline-block.
+
+inline-block: possui o tamanho do conteúdo, porem regulável.
+
+Como toda página tem um menu de navegação, existe a tag nav para evitar a criação de um estilo específico para isso.
+
+bordas possuem tres propriedades importates:
+o tipo
+o tamanho
+a cor;
+
+"caixas" do elemento HTML
+espaço do conteúdo: elemento em si;
+espaçamento interno: padding;
+borda: border;
+espaçamento externo: margin;
+
+border-radius:
+funciona cm se o css inserisse circulos no canto da pagina.
+pode-se definir cada uma individualizada ou tamanho único para todas.
+a medida inserida é em pixels, e corresponde ao raio do círculo que se deseja.
+
+
+Comportamentos com CSS:
+
+.produtos li:hover h2 => Indica o comportamento esperado elemento h2 dentro de (.produtos li) quando o mouse estiver sobre o elemento li dentro de produtos.
+Unicode-table.com: para pesquisar caracteres especiais.
+
+	background: url("bg.jpg"): dessa forma uma imagem representa a cor de fundo do elemento da página. Essa imagem é repetida N vezes preenchendo todo o espaço.
+
+
+Formulários
+
+Todo objeto de input deve vir acompanhado de um label para identificar o texto esperado.
+Utilizando a propriedade for no label, ao clicar no input o cursor se move para o input, uma funcionalidade muito útil para grandes forms.
+
+
+mobileinputtypes.com
+
+Brincar com estilos CSS:
+
+	transition: 1s all;
+		transform: scale(1.2);
+
+    A tag table, que representa a tabela
+    A tag tr, que representa a linha da tabela
+    A tag td, que representa a célula da tabela
+    A tag thead, que representa o cabeçalho da tabela
+    A tag tbody, que representa o corpo da tabela
+    A tag th, que representa a célula do cabeçalho da tabela
+    A tag tfoot, que representa o rodapé da tabela
+
+		HTML 5 e css 3 parte
+
+		Nesta aula, aprendemos:
+
+		    A ajustar a página principal para utilizar os mesmos padrões da página de produtos
+		    Medidas proporcionais com CSS
+		    Como funciona a flutuação dos elementos e como modificá-la, com a propriedade float do CSS
+		    Como limpar o float, com a propriedade clear do CSS
+
+	quando temos texto, conteúdo e imagem, todos usados pra uma mesma tarefa, utilizamos
+	a tag section
+
+	Para um bloco onde o conteúdo tenha o mesmo significado, o mesmo sentido,
+	usamos uma <section>.
+
+
+em é uma medida proporcional pra pixels. 2em quer dizer que o elemento com essa
+medida terá o dobro da medida padrão de outro elemento.
+
+interessante utilizar um espaço que seja prpopporcinal o tamanho da fonte.
+se a fonte tem 2em, utilizar 1em.
+
+quando utilizamos a propriedade float, o elemento flutua, mas deixa uma sombra.
+os elementos adjacentes então, ficam em volta desse elemento. usamos float e o
+lado que desejamos que esse elemento flutue (left ou right);
+
+quando utilizamos o float, ele afeta todos os elementos abaixo dele. Podendo
+desconfigurar toda a página.
+
+Para isso utilizamos o clear. clear e o lado que definimos para o float que estamos
+limpando.
+
+margin: cima direita baixo esquerda
+
+
+aula 2 - Conteúdo externo
+
+Nesta aula, aprendemos:
+
+    A utilizar fontes externas nas nossas páginas
+    Como incorporar um mapa à nossa página
+    Como incorporar um vídeo à nossa página
+
+
+Fontes podem ser publicas e privadas. Fontes próprias para web são fontes que são
+pensadas para páginas web, diferentemente das fontes pensadas para serem impressas ou
+utilizadas para outros fins.
+
+iframes servem para inserir conteúdo externo em nossas páginas.
+um conteúdo externo que está sendo exibido em nossa página.
+
+aula 3 - melhorando o css2
+
+pseudo-elementos:
+:hover :active :visited :required
+
+ao utilizar 	display: inline-block; os elementos não podem ter espaço entre si,
+pois tudo onde incidir esse display será interpretado pelo navegador.
+assim os elementos devem ficar juntos:
+(...)
+<li class="itens">Localização</li>
+</ul><img src="beneficios.jpg" class="imagem-beneficios">
+
+
+são pseudo-classes:
+:first-child :last-child :nth-child
+
+ex.: .itens:first-child
+
+:nth-child aplicações
+
+.itens:nth-child(4) => pega o 4 elemento da lista
+.itens:nth-child(2n) => pega os elementos de 2 em 2 e aplica o css.
