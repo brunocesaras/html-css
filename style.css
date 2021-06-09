@@ -198,7 +198,7 @@ td, th{
 }
 
 .mapa{
-	margin: 3em 0;
+	padding: 3em 0;
 	background:  linear-gradient(#FEFEFE, #888888);
 }
 
@@ -213,7 +213,7 @@ td, th{
 }
 
 .beneficios{
-	margin: 3em 0;
+	padding: 3em 0;
 	background: #888888;
 }
 
